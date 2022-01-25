@@ -6,37 +6,11 @@
  * @flow strict-local
  */
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-  useColorScheme,
-} from 'react-native';
+import AppNavigation from './src/navigation/index';
+import React from 'react';
 
 const App = () => {
-  return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.container}>
-        <Text>Hola</Text>
-      </View>
-    </SafeAreaView>
-  );
+  return <AppNavigation />;
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;
